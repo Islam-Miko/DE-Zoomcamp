@@ -38,7 +38,7 @@ def store_on_local(dataframe: pd.DataFrame, color: str, dataset_filename: str)->
     store_path = Path(
         f"data/{color}/{dataset_filename}.parquet"
     )
-    dataframe.to_parquet(store_path, compression="gzip")
+    #dataframe.to_parquet(store_path, compression="gzip")
     return store_path
 
 @task()
